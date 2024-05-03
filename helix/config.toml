@@ -10,7 +10,7 @@ line-number = "absolute"
 cursorline = false
 cursorcolumn = false
 auto-completion = true
-auto-format = false
+auto-format = true
 auto-save = true
 idle-timeout = 500
 completion-timeout = 5
@@ -75,12 +75,17 @@ skip-levels = 1
 "C-right" = ["move_next_word_start", "move_char_right"]
 "C-h" = "delete_word_backward"
 "C-del" = "delete_word_forward"
-"A-x" = "normal_mode"
+"A-x" = ["normal_mode", ":w"]
+"C-s" = ":w"
+"C-S-s" = ":w!"
 
 [keys.normal]
 "C-left" = ["move_prev_word_start", "collapse_selection"]
 "C-right" = ["move_next_word_start", "move_char_right"]
-"C-s" = [":w", ":sh cargo fmt", ":rl"]
+"C-s" = ":w"
+"C-S-s" = ":w!"
+"pagedown" = "page_cursor_half_down"
+"pageup" = "page_cursor_half_up"
 
 [keys.select]
 "C-left" = "move_prev_word_start"
