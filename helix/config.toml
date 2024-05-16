@@ -5,7 +5,7 @@ scrolloff = 5
 mouse = true
 middle-click-paste = false
 scroll-lines = 3
-shell = ["nu", "-c"]
+shell = ["pwsh", "-c"]
 line-number = "absolute"
 cursorline = false
 cursorcolumn = false
@@ -67,15 +67,16 @@ wrap-around = true
 
 [editor.indent-guides]
 render = true
-character = "│"
+character = "▏"
 skip-levels = 1
 
 [keys.insert]
 "C-left" = ["move_prev_word_start", "collapse_selection"]
 "C-right" = ["move_next_word_start", "move_char_right"]
-"C-h" = "delete_word_backward"
+"C-backspace" = "delete_word_backward"
 "C-del" = "delete_word_forward"
-"A-x" = ["normal_mode", ":w"]
+"home" = "goto_first_nonwhitespace"
+"A-x" = "normal_mode"
 "C-s" = ":w"
 "C-S-s" = ":w!"
 
@@ -86,6 +87,9 @@ skip-levels = 1
 "C-S-s" = ":w!"
 "pagedown" = "page_cursor_half_down"
 "pageup" = "page_cursor_half_up"
+"home" = "goto_first_nonwhitespace"
+"p" = "paste_before"
+"P" = "paste_after"
 
 [keys.select]
 "C-left" = "move_prev_word_start"

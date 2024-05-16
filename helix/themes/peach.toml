@@ -89,13 +89,14 @@ usnafe_fn = "#FF8D00"
 string_escape_seq = "#B5CEA8"
 invalid_string_escape_seq = "#C800B6"
 disabled_code = "#526544"
-inlay_hints = "#383838"
+inlay_hints = "#AAAAAA"
+indent_guide = "#333333"
 
 mdcode = "#CE9178"
 mdheading = "#9393CC"
 mdlink = "#AED4FE"
 
-cursor = "#565959"
+cursor = "#AE5B5B"
 cursor_select = "#486363"
 
 invalid = "#ff00ff"
