@@ -40,7 +40,8 @@
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.link.url" = { fg = "mdlink", modifiers = ["underlined"] }
 
-"ui.cursor" = { bg = "cursor" }
+"ui.cursor" = { bg = "secondary_cursor" }
+"ui.cursor.primary" = { bg = "cursor" }
 "ui.selection" = { bg = "cursor_select", underline.style = "line" }
 # "ui.popup" = { bg = "menus" }
 # "ui.popup.info" = "white"
@@ -49,6 +50,7 @@
 "ui.debug.breakpoint" = "error"
 "ui.debug.active" = "warning"
 "ui.gutter.selected" = { fg = "#262226", bg = "#826482" }
+"ui.statusline" = { fg = "statusline" }
 "ui.statusline.inactive" = { bg = "palette_grey" }
 "ui.statusline.normal" = { bg = "palette_blue" }
 "ui.statusline.insert" = { bg = "palette_cyan" }
@@ -96,6 +98,7 @@ mdcode = "#CE9178"
 mdheading = "#9393CC"
 mdlink = "#AED4FE"
 
+secondary_cursor = "#875BAE"
 cursor = "#AE5B5B"
 cursor_select = "#486363"
 
@@ -117,3 +120,4 @@ palette_green = "#3B703E"
 palette_yellow = "#828446"
 palette_grey = "#686868"
 
+statusline = "#9CC2FE"
