@@ -30,7 +30,7 @@
 "function" = "functions"
 "function.method" = "functions"
 "function.macro" = { fg = "macros", modifiers = ["italic"] }
-"tag" = "invalid"
+"tag" = "vars"
 "namespace" = "typename"
 "special" = "functions"
 
@@ -59,7 +59,6 @@
 "ui.virtual.inlay-hint" = "inlay_hints"
 
 "ui.bufferline.active" = { bg = "palette_grey" }
-
 
 "warning" = "warning"
 "error" = "error"
