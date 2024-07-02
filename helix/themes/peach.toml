@@ -51,12 +51,15 @@
 "ui.debug.active" = "warning"
 "ui.gutter.selected" = { fg = "#262226", bg = "#826482" }
 "ui.statusline" = { fg = "statusline" }
-"ui.statusline.inactive" = { bg = "palette_grey" }
+"ui.statusline.inactive" = { bg = "default" }
 "ui.statusline.normal" = { bg = "palette_blue" }
 "ui.statusline.insert" = { bg = "palette_cyan" }
 "ui.statusline.select" = { bg = "palette_green" }
 "ui.virtual.indent-guide" = "inlay_hints"
 "ui.virtual.inlay-hint" = "inlay_hints"
+
+"ui.bufferline.active" = { bg = "palette_grey" }
+
 
 "warning" = "warning"
 "error" = "error"
