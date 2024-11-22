@@ -83,6 +83,8 @@ skip-levels = 1
 [keys.normal]
 "C-left" = ["move_prev_word_start", "collapse_selection"]
 "C-right" = ["move_next_word_start", "move_char_right"]
+"C-h" = ["move_prev_word_start", "collapse_selection"]
+"C-l" = ["move_next_word_start", "move_char_right"]
 "C-s" = ":w"
 "C-S-s" = ":w!"
 "pagedown" = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
@@ -91,9 +93,35 @@ skip-levels = 1
 "p" = "paste_before"
 "P" = "paste_after"
 
+"C-down" = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
+"C-up" = ["move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up"]
+
+"C-S-up" = ["select_mode", "copy_selection_on_prev_line", "normal_mode"]
+"C-S-down" = ["select_mode", "copy_selection_on_next_line", "normal_mode"]
+
+"S-up" = ["extend_visual_line_up"]
+"S-down" = ["extend_visual_line_down"]
+
+"C-S-right" = ["extend_next_word_start"]
+"C-S-left" = ["extend_prev_word_start"]
+
+"S-right" = ["extend_char_right"]
+"S-left" = ["extend_char_left"]
+
+
 [keys.normal.space]
 "\\" = "goto_next_buffer"
 "tab" = "goto_previous_buffer"
+"q" = ":bc"
+"Q" = ":bc!"
+
+[keys.normal.space.w]
+"w" = "jump_view_up"
+"a" = "jump_view_left"
+"s" = "jump_view_down"
+"d" = "jump_view_right"
+"minus" = "hsplit"
+"+" = "vsplit"
 
 [keys.select]
 "C-left" = "move_prev_word_start"
