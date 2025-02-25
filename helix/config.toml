@@ -28,6 +28,10 @@ default-line-ending = "native"
 insert-final-newline = true
 popup-border = "all"
 indent-heuristic = "hybrid"
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [editor.gutters]
 layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
@@ -89,7 +93,13 @@ skip-levels = 1
 "C-S-s" = ":w!"
 "pagedown" = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
 "pageup" = ["move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up"]
+"C-j" = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
+"C-k" = ["move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up"]
+"A-j" = ["move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down", "move_visual_line_down"]
+"A-k" = ["move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up", "move_visual_line_up"]
 "home" = "goto_first_nonwhitespace"
+"A-h" = "goto_first_nonwhitespace"
+"A-l" = "goto_line_end"
 "p" = "paste_before"
 "P" = "paste_after"
 
@@ -99,15 +109,19 @@ skip-levels = 1
 "C-S-up" = ["select_mode", "copy_selection_on_prev_line", "normal_mode"]
 "C-S-down" = ["select_mode", "copy_selection_on_next_line", "normal_mode"]
 
+"S-home" = ["select_mode", "goto_first_nonwhitespace", "normal_mode"]
+"S-end" = ["select_mode", "goto_line_end", "normal_mode"]
+
 "S-up" = ["extend_visual_line_up"]
 "S-down" = ["extend_visual_line_down"]
 
-"C-S-right" = ["extend_next_word_start"]
+"C-S-right" = ["extend_next_word_end"]
 "C-S-left" = ["extend_prev_word_start"]
 
 "S-right" = ["extend_char_right"]
 "S-left" = ["extend_char_left"]
 
+"C-c" = ["yank_to_clipboard"]
 
 [keys.normal.space]
 "\\" = "goto_next_buffer"

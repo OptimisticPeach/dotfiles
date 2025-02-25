@@ -57,17 +57,19 @@
 "ui.statusline.select" = { bg = "palette_green" }
 "ui.virtual.indent-guide" = "inlay_hints"
 "ui.virtual.inlay-hint" = "inlay_hints"
+"ui.virtual.jump-label" = { modifiers = ["bold"], underline = { color = "invalid", style = "dotted" } }
 
 "ui.bufferline.active" = { bg = "palette_grey" }
 
-"warning" = "warning"
 "error" = "error"
 "info" = "info"
-"diagnostic" = { bg = "diagnostic" }
-"diagnostic.hint" = { bg = "diag_info" }
-"diagnostic.info" = { bg = "diag_info" }
-"diagnostic.warning" = { bg = "diag_warn" }
-"diagnostic.error" = { bg = "diag_err" }
+"warning" = "warning"
+
+"diagnostic" = { underline = { color = "diagnostic", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "info", style = "curl" } }
+"diagnostic.info" = { underline = { color = "info", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error", style = "curl" } }
 
 "diff.plus" = "palette_green"
 "diff.minus" = "palette_blue"
